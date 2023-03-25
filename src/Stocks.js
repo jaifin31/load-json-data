@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { stockData } from "./data";
+import { stockData } from "./csvjson";
 
 export const Stocks = () => {
   return (
@@ -11,10 +11,10 @@ export const Stocks = () => {
             <div key={key}>
               <Stock
                 key={key}
-                company={data.company}
-                ticker={data.ticker}
-                stockPrice={data.stockPrice}
-                timeElapsed={data.timeElapsed}
+                company={data.Name}
+                ticker={data["Games Played"]}
+                stockPrice={data.MIN}
+                timeElapsed={data.PTS}
               />
             </div>
           );
@@ -40,7 +40,16 @@ export const Stock = ({ company, ticker, stockPrice, timeElapsed }) => {
             <h4>{stockPrice}</h4>
           </td>
           <td>
-            <p>{timeElapsed}</p>
+            <h4>{timeElapsed}</h4>
+          </td>
+          <td>
+            <h4>{timeElapsed}</h4>
+          </td>
+          <td>
+            <h4>{timeElapsed}</h4>
+          </td>
+          <td>
+            <h4>{timeElapsed}</h4>
           </td>
         </tr>
       </tbody>

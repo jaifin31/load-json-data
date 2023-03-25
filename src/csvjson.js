@@ -1,6 +1,6 @@
-[
+export const stockData =[
   {
-    "Name": "AJ Price",
+    Name: "AJ Price",
     "Games Played": 26,
     "MIN": 324,
     "PTS": 133,
