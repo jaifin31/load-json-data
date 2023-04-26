@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import { Stocks } from "./Stocks";
+ import { Stocks } from "./Stocks";
  import HomePageHeader from "./HomePageHeader";
 import { Stock } from "./Stocks";
+
 
 
 function App() {
@@ -10,7 +11,6 @@ function App() {
     <div className="App">
       <HomePageHeader/>
       <Stocks />
-      <Stock/>
     </div>
   );
 }
